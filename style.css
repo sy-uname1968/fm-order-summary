@@ -87,7 +87,7 @@ body {
     margin-left: 25px;
 }
 
-.item >h4 {
+.item >h3 {
     color: hsl(223, 47%, 23%);
 }
 
