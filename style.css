@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+}
+body {
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+}
+
+.card-container {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+    .card-container {
+        max-width: 450px;
+    }
+    .card-body {
+        padding: 50px 45px;
+    }
+
+    .line-item {
+        padding: 25px;
+    }
+
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 25px 25px;
+}
+
+.card-body > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-body > p {
+    text-align: center;
+    font-weight: 500; 
+    color:hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+}
+
+.line-item {
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    margin-left: 25px;
+}
+
+.item >h4 {
+    color: hsl(223, 47%, 23%);
+}
+
+.item > p {
+    color:hsl(224, 23%, 55%);
+}
+
+.change-action {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.change-action:hover {
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    height: 50px;
+    padding: 0;
+    border: 1px hsl(245, 75%, 52%);
+    /* background: none; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    box-shadow: -5px 20px 40px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.cancel {
+    color:hsl(224, 23%, 55%);
+    text-align: center;
+    font-weight: 700;
+}
+
+.cancel:hover {
+    cursor: pointer;
+}
